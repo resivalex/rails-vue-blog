@@ -2,9 +2,14 @@
   "name": "rails-vue-blog",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^3.1.1"
+    "pug": "^2.0.0-rc.4",
+    "scss": "^0.2.4",
+    "vue": "^2.5.11"
   },
   "devDependencies": {
+    "@rails/webpacker": "^3.1.1",
+    "vue-loader": "^13.6.0",
+    "vue-template-compiler": "^2.5.11",
     "webpack-dev-server": "^2.9.7"
   }
 }
