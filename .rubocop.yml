@@ -1,0 +1,53 @@
+AllCops:
+  Exclude:
+    - "bin/*"
+    - "db/**/*"
+    - "node_modules/**/*"
+    - "script/*"
+  TargetRubyVersion: 2.4
+Rails:
+  Enabled: true
+
+Rails/Delegate:
+  Enabled: false
+
+Layout/EmptyLinesAroundClassBody:
+  Enabled: false
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: false
+Layout/EmptyLinesAroundMethodBody:
+  Enabled: false
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/AccessorMethodName:
+  Enabled: false
+
+Style/TrivialAccessors:
+  AllowPredicates: true
+  Whitelist:
+    - "*?"
+
+Metrics/LineLength:
+  Max: 100
+Documentation:
+  Enabled: true
+
+MethodLength:
+  Max: 12
+
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - 'Rakefile'
+    - 'lib/**/*.rake'
+    - 'config/routes.rb'
+  ExcludedMethods: ['describe', 'context', 'factory', 'define', 'resources', 'helpers', 'configure']
+
+Rails/SkipsModelValidations:
+  Enabled: true
